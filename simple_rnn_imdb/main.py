@@ -13,7 +13,7 @@ reverse_word_index = {value: key for key, value in word_index.items()}
 st.write(os.listdir())
 st.write(os.getcwd())
 # Load the pre-trained model with ReLU activation
-model = load_model('simple_rnn_imdb.h5')
+model = load_model('simple_rnn_imdb/simple_rnn_imdb.h5')
 
 # Step 2: Helper Functions
 # Function to decode reviews
