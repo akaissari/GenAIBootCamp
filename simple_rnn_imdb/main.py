@@ -4,11 +4,12 @@ import tensorflow as tf
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import load_model
-
+import os
 # Load the IMDB dataset word index
 word_index = imdb.get_word_index()
 reverse_word_index = {value: key for key, value in word_index.items()}
-
+st.write(os.listdir())
+st.write(os.getcwd())
 # Load the pre-trained model with ReLU activation
 model = load_model('simple_rnn_imdb.h5')
 
